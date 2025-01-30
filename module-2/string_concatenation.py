@@ -20,3 +20,9 @@ print(full_name)
 # This is how you would have to do the previous statement.
 # Uncomment the line below and run to see the result.
 #print(first_name + str(25))
+
+age = 25
+color = "red"
+
+print(f"Hello my name is {first_name} {last_name}. I am {age} years old. "
+      f"My favorite color is {color}.")
