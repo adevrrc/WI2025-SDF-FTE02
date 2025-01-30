@@ -23,7 +23,8 @@ print(name[:5])
 # End at the last index
 print(name[2:])
 
-# Negative indexes start from the end of the string, -1 represents the last element
+# Negative indexes start from the end of the string, -1 represents the 
+# last element
 print(name[-5:-2])
 
 # Using step

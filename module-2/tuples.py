@@ -38,5 +38,8 @@ print(sum(temperatures))
 print(sorted(temperatures))
 
 # Other methods
-# count(value) # returns the number of occurrences of the argument
-# index(value) # returns the index of the first occurrence
+# Returns the number of occurrences of the argument
+# count(value)
+
+# Returns the index of the first occurrence
+# index(value) 

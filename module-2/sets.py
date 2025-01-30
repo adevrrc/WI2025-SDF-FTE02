@@ -24,7 +24,8 @@ print(scores)
 scores.remove(55)
 print(scores)
 
-# Like remove, but doesn't generate an exception when the value doesn't exist
+# Like remove, but doesn't generate an exception when the value doesn't 
+# exist
 scores.discard(80)
 scores.discard(1)
 

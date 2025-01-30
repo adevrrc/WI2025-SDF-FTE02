@@ -35,5 +35,9 @@ print(hockey_teams)
 
 # Other methods
 # copy()
-# popitem() # removes last inserted key-value pair
-# setdefault(keyname, value) # if the key does not exist, the key-value pair is inserted
+
+# Removes last inserted key-value pair
+# popitem()
+
+# If the key does not exist, the key-value pair is inserted
+# setdefault(keyname, value) 
