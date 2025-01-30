@@ -20,8 +20,8 @@ print(employee_information)
 
 # List of lists
 employee_data = [
-  ["B234", 34595.65, 323, False],
-  employee_information
+    ["B234", 34595.65, 323, False], 
+    employee_information
 ]
 
 print(employee_data)
