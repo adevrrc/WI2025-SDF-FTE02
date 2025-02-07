@@ -7,18 +7,26 @@ Example:
 __author__ = "Damien Altenburg"
 __version__ = "1.0.0"
 
-age = 25
-name = "Damien"
+age: int = 25
+name: str = "Damien"
 
+# Boolean literals
 print(True)
 print(False)
 
-is_person_cool = True
+# Boolean variables
+is_damien_cool: bool = True
+print(is_damien_cool)
 
-print(is_person_cool)
-
+# Boolean Functions
 print(name.isalpha())
+print(name.isdigit())
 
+# Comparison Operators (Boolean Operations)
 print(age == 25)
-print(age != 25)
-print(age < 30)
+print(age == 35)
+print(age != 35)
+print(age < 14)
+print(age <= 25)
+print(age > 25)
+print(age >= 25)
