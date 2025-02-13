@@ -6,11 +6,17 @@ Example:
 
 from math import sqrt, pow, pi, ceil, floor
 from random import random, randint, uniform, choice, shuffle
+#import pprint
+from pprint import pprint
 
 __author__ = "your_name_here"
 __version__ = "1.0.0"
 
 teams = ["jets", "flames", "oilers", "canucks", "senators", "canadians"]
+
+print(teams)
+
+pprint(teams)
 
 print(sqrt(9))
 
