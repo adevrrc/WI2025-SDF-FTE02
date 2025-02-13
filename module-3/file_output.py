@@ -11,7 +11,6 @@ FILE_PATH = "grades.txt"
 
 grades = [85, 34, 67, 78, 89, 99, 21, 45, 64, 88, 92]
 
-
 # Write to a file then close the file
 with open(FILE_PATH, "w") as file:
     file.write(str(grades[0]))
