@@ -8,12 +8,24 @@ __author__ = "Damien Altenburg"
 __version__ = "1.0.0"
 
 from random import randint
+import logging as log
+
+# Configure logging
+# When you are ready to deploy, the severity level can be changed
+# to ERROR or CRITICAL
+log.basicConfig(level=log.DEBUG)
+
+# Create a logger
+logger = log.getLogger(__name__)
 
 title_text = "** JELLYBEAN GUESSING GAME **"
 
 LOW_RANGE = 1
 HIGH_RANGE = 10
 NUMBER_OF_JELLYBEANS = randint(LOW_RANGE, HIGH_RANGE)
+
+# Used while testing to see what the random number is
+logger.debug(f"Number of jellybeans: {NUMBER_OF_JELLYBEANS}")
 
 guess_count = 0
 
@@ -48,6 +60,13 @@ while guess != NUMBER_OF_JELLYBEANS:
             
             prompt_text = "Re-enter guess: "
 
+            # exc_info suppresses exception message
+            logger.exception(f"ValueError: guess was {guess}",
+                             exc_info=False)
+
     guess_count += 1
+
+    # Keep track of the guess count
+    logger.debug(f"Guess count: {guess_count}")
 
 print(f"It took you {guess_count} guess{'' if guess_count == 1 else 'es'}.")
