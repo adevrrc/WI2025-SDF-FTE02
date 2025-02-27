@@ -13,8 +13,11 @@ SCRIPT_DIRECTORY = path.dirname(path.realpath(__file__))
 FILENAME = "data.txt"
 FILE_PATH = f"{SCRIPT_DIRECTORY}/{FILENAME}"
 
-with open(FILE_PATH) as data_file:
-    for record in data_file:
-        print(record)
+try:
+    with open(FILE_PATH) as data_file:
+        for record in data_file:
+            print(record)
+except FileNotFoundError:
+    print(f"{FILENAME} not found.")
 
 input("Press <enter> to continue...")
