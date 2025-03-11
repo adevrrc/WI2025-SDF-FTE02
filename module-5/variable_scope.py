@@ -7,6 +7,9 @@ Example:
 __version__ = "1.11.2024"
 __author__ = "Damien Altenburg"
 
+# Global Scope Variable
+name = "Damien"
+
 def to_binary(decimal_number: int) -> str:
     """Returns a string containing the binary equivalent to the
     specified decimal number.
@@ -22,6 +25,9 @@ def to_binary(decimal_number: int) -> str:
         >>> to_binary(147)
         "10010011"
     """
+
+    # Use global scope variable
+    print(f"Global in function: {name}")
     
     binary_number = ""
 
@@ -38,3 +44,5 @@ def to_binary(decimal_number: int) -> str:
     return binary_number
 
 print(to_binary(147))
+
+print(f"Global in module scope: {name}")
