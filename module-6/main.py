@@ -8,7 +8,7 @@ __author__ = "Damien Altenburg"
 __version__ = "1.3.2025"
 
 def main():
-    """"""
+    """The main function of the program."""
 
     #playing_card = PlayingCard(Rank.ACE, "Club")
 
@@ -32,6 +32,18 @@ def main():
 
     print(repr(playing_card))
     print(str(playing_card))
+
+    print("*" * 40)
+
+    deck_of_cards = []
+
+    for suit in list(Suit):
+        for rank in list(Rank):
+            deck_of_cards.append(PlayingCard(rank, suit))
+
+    for card in deck_of_cards:
+        card.flip()
+        print(card)
 
 if __name__ == "__main__":
     main()
